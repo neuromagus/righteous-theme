@@ -3,11 +3,11 @@
 
 (deftheme righteous "Righteous theme")
 
-(let* ((righteous/bg          "#00181f")
-       (righteous/fg          "#93a1a1")
+(let* ((righteous/bg          "#002b36")
+       (righteous/fg          "#808080")
        (righteous/comment     "#4e4e4e")
        (righteous/string      "#5faf87")
-       (righteous/parentmatch "#ff5fff")
+       (righteous/parentmatch "#ff5fff ")
        (righteous/cursor      "#cd390b")
        (righteous/select      "#767676"))
 
