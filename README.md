@@ -1,7 +1,7 @@
 ## Righteous
 A righteous dark theme for Emacs, inspired by Acme/Solarized themes.
 
-![Screenshot](./screenshot.jpg)
+![Screenshot](./screenshot.jg)
 
 ## Installing
 
