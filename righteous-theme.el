@@ -1,13 +1,14 @@
 ;; righteous-theme.el -- Colorless righteous theme, inspired by ACME/Solarized/One dark themes
-;; version: 1.0
+;; version: 1.01
 
 (deftheme righteous "Righteous theme")
 
-(let* ((righteous/bg          "#002b36")
-       (righteous/fg          "#808080")
+(let* ((righteous/bg          "#00181f")
+       (righteous/fg          "#93a1a1")
        (righteous/comment     "#4e4e4e")
+       (righteous/modeline    "#6c6c6c")
        (righteous/string      "#5faf87")
-       (righteous/parentmatch "#ff5fff ")
+       (righteous/parentmatch "#ff5fff")
        (righteous/cursor      "#cd390b")
        (righteous/select      "#767676"))
 
@@ -26,7 +27,7 @@
     
    ;; modeline
    `(linum ((t :foreground, righteous/fg)))
-   `(mode-line ((t (:background, righteous/bg))))
+   `(mode-line ((t (:foreground, righteous/modeline :background, righteous/bg))))
    
    ;; hl-line
    `(hl-line ((t (:foreground, righteous/select ))))
@@ -48,6 +49,7 @@
    `(font-lock-doc-face ((t (:foreground ,righteous/comment))))
    `(font-lock-preprocessor-face ((t (:foreground ,righteous/comment))))
    `(font-lock-regexp-grouping-construct ((t (:foreground ,righteous/comment))))
+
    
    ;; warning/errors
    `(warning ((t (:foreground "red"))))
