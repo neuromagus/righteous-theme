@@ -1,5 +1,5 @@
 ;; righteous-theme.el -- Colorless righteous theme, inspired by ACME/Solarized/One dark themes
-;; version: 1.01
+;; version: 1.03
 
 (deftheme righteous "Righteous theme")
 
@@ -14,7 +14,9 @@
 
   (custom-theme-set-faces
    `righteous
-   `(default ((t (:foreground, righteous/fg :background, righteous/bg))))
+   `(default ((((type tty) (min-colors 256))(:foreground, righteous/fg))
+              (t (:foreground, righteous/fg :background, righteous/bg))
+              ))
    
    ;; highlight
    `(region  ((t (:foreground "black" :background, righteous/select))))
@@ -27,7 +29,9 @@
     
    ;; modeline
    `(linum ((t :foreground, righteous/fg)))
-   `(mode-line ((t (:foreground, righteous/modeline :background, righteous/bg))))
+   `(mode-line ((((type tty) (min-colors 256))(:foreground, righteous/fg))
+                (t (:foreground, righteous/modeline))
+                ))
    
    ;; hl-line
    `(hl-line ((t (:foreground, righteous/select ))))
