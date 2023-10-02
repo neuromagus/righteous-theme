@@ -15,6 +15,7 @@
   (custom-theme-set-faces
    `righteous
    `(default ((((type tty) (min-colors 256))(:foreground, righteous/fg))
+              (((type tty) (min-colors 8))(:background "black"))
               (t (:foreground, righteous/fg :background, righteous/bg))
               ))
    
@@ -30,6 +31,7 @@
    ;; modeline
    `(linum ((t :foreground, righteous/fg)))
    `(mode-line ((((type tty) (min-colors 256))(:foreground, righteous/fg))
+                (((type tty) (min-colors 8))(:background "black"))
                 (t (:foreground, righteous/modeline))
                 ))
    
