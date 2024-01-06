@@ -6,7 +6,7 @@ A righteous dark theme for Emacs, inspired by Acme/Solarized themes.
 
 ## Installing
 
-Copy `righteous-theme.el` to the `~/.config/emacs/themes` and add to the `init.el`:
+Copy `righteous-theme.el` to the `~/.config/emacs/themes` and add in `init.el`:
 
 ```elisp
 (add-to-list 'custom-theme-load-path (expand-file-name "~/.config/emacs/themes")
@@ -23,7 +23,7 @@ Transparent is enabled by adding:
 
 ## Added minimal theme for Joe (jmacs) editor
 
-copy `joe/righteous.jcf` to the `~/.joe/colors/` and add to the `.jmacrc`:
+copy `joe/righteous.jcf` to the `~/.joe/colors/` and add in `.jmacrc`:
 
 ```bash
 -colors righteous
