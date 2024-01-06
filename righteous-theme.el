@@ -1,5 +1,6 @@
 ;; righteous-theme.el -- Colorless righteous theme, inspired by ACME/Solarized/One dark themes
-;; version: 1.03
+;; created by Neuromagus ;)
+;; version: 1.04
 
 (deftheme righteous "Righteous theme")
 
@@ -49,14 +50,13 @@
    
    ;; add for strings and comments
    `(font-lock-string-face		((t (:foreground ,righteous/string))))
-   `(font-lock-comment-face		((t (:foreground ,righteous/comment))))
-   `(font-lock-comment-delimiter-face	((t (:foreground ,righteous/comment))))
+   `(font-lock-comment-face		((t (:foreground ,righteous/comment :slant italic))))
+   `(font-lock-comment-delimiter-face	((t (:foreground ,righteous/comment :slant italic))))
    `(font-lock-doc-string-face ((t (:foreground ,righteous/comment))))
    `(font-lock-doc-face ((t (:foreground ,righteous/comment))))
    `(font-lock-preprocessor-face ((t (:foreground ,righteous/comment))))
    `(font-lock-regexp-grouping-construct ((t (:foreground ,righteous/comment))))
 
-   
    ;; warning/errors
    `(warning ((t (:foreground "red"))))
    `(error ((t (:foreground "red" :weight bold))))
