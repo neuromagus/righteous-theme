@@ -14,8 +14,8 @@ Copy `righteous-theme.el` to the `~/.config/emacs/themes` and add to the `init.e
 ```
 
 
-If Emacs 29 version or high, theme looks the best with transparent background.
-Wayland WMs have compositor out the box (best experience with [DWL](https://codeberg.org/dwl/dwl)), for X11 need `picom` or alternatives.
+If Emacs 29 version or high, theme looks the best with transparent background.  
+Wayland WMs have compositor out the box (best experience with [DWL](https://codeberg.org/dwl/dwl)), for X11 need `picom` or alternatives.  
 Transparent is enabled by adding: 
 
 ```elisp
