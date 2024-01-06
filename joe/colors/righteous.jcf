@@ -1,0 +1,9 @@
+# righteous theme
+
+.colors 256
+
+-status 247/236
+
+=String     72
+=StringEscape 72
+=Comment   239 italic
