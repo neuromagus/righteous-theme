@@ -23,7 +23,7 @@ Transparent is enabled by adding:
 
 ## Added minimal theme for Joe (jmacs) editor
 
-copy `joe/righteous.jcf` to the `~/.joe/colors/` and add in `.jmacrc`:
+copy `joe/righteous.jcf` to the `~/.joe/colors/` and add in `~/.jmacrc`:
 
 ```bash
 -colors righteous
