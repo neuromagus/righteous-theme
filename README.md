@@ -12,4 +12,12 @@ copy `righteous-theme.el` to the `~/.config/emacs/themes` and put the following 
 (load-theme 'righteous t)
 ```
 
+## Added minimal theme for Joe (jmacs) editor
+
+copy `righteous.jcf` to `~/.joe/colors/` and add to the `.jmacrc`
+
+```ini
+-colors righteous
+```
+
 Enjoy ;)
