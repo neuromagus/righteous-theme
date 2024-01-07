@@ -51,7 +51,7 @@
    ;; add for strings and comments
    `(font-lock-string-face                 ((t (:foreground, righteous/string))))
    `(font-lock-comment-face                ((t (:foreground, righteous/comment :slant italic))))
-   `(font-lock-comment-delimiter-face	   ((t (:foreground, righteous/comment :slant italic))))
+   `(font-lock-comment-delimiter-face      ((t (:foreground, righteous/comment :slant italic))))
    `(font-lock-doc-string-face             ((t (:foreground, righteous/comment))))
    `(font-lock-doc-face                    ((t (:foreground, righteous/comment :slant italic))))
    `(font-lock-preprocessor-face           ((t (:foreground, righteous/comment))))
