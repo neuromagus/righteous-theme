@@ -21,7 +21,7 @@ Transparent is enabled by adding:
 (add-to-list 'default-frame-alist '(alpha-background . 88))  ; where '88' is opacity
 ```
 
-## Added minimal theme for Joe (jmacs) editor
+## Add a minimal theme for Joe (jmacs) editor
 
 copy `joe/righteous.jcf` to the `~/.joe/colors/` and add in `~/.jmacrc`:
 
