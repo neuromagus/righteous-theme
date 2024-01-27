@@ -13,14 +13,6 @@ Copy `righteous-theme.el` to the `~/.config/emacs/themes` and add in `init.el`:
 (load-theme 'righteous t)
 ```
 
-If Emacs 29 version or high, theme looks the best with transparent background.  
-Wayland WM has a built-in composer (best experience with [DWL](https://codeberg.org/dwl/dwl)), X11 requires ```picom``` or alternatives.  
-Transparent is enabled by adding: 
-
-```elisp
-(add-to-list 'default-frame-alist '(alpha-background . 88))  ; where '88' is opacity
-```
-
 ## Add a minimal theme for Joe (jmacs) editor
 
 copy `joe/righteous.jcf` to the `~/.joe/colors/` and add in `~/.jmacrc`:
