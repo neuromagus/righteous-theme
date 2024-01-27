@@ -28,9 +28,13 @@
 
    ;; cursor   
    `(cursor                                ((t (:background, righteous/cursor))))
-    
+
+   ;; shell
+   `(sh-quoted-exec                        ((t (:foreground, righteous/string))))
+   
    ;; modeline
    `(linum                                 ((t :foreground, righteous/fg)))
+   `(minibuffer-prompt                     ((t :foreground, righteous/string)))
    `(mode-line ((((type tty) (min-colors 256))(:foreground, righteous/fg))
                 (((type tty) (min-colors 8))(:background "black"))
                 (t (:foreground, righteous/modeline))
@@ -51,7 +55,7 @@
    ;; add for strings and comments
    `(font-lock-string-face                 ((t (:foreground, righteous/string))))
    `(font-lock-comment-face                ((t (:foreground, righteous/comment :slant italic))))
-   `(font-lock-comment-delimiter-face      ((t (:foreground, righteous/comment :slant italic))))
+   `(font-lock-comment-delimiter-face	   ((t (:foreground, righteous/comment :slant italic))))
    `(font-lock-doc-string-face             ((t (:foreground, righteous/comment))))
    `(font-lock-doc-face                    ((t (:foreground, righteous/comment :slant italic))))
    `(font-lock-preprocessor-face           ((t (:foreground, righteous/comment))))
