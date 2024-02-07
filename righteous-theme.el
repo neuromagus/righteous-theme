@@ -40,7 +40,7 @@
    `(mode-line ((((type tty) (min-colors 256))(:foreground, righteous/fg))
                 (((type tty) (min-colors 8))(:background "black"))
                 (t (:foreground, righteous/modeline))
-                ))
+    ))
    
    ;; hl-line
    `(hl-line                               ((t (:foreground, righteous/select ))))
@@ -67,8 +67,14 @@
    `(warning                               ((t (:foreground "red"))))
    `(error                                 ((t (:foreground "red" :weight bold))))
    `(font-lock-warning-face                ((t (:foreground "red" :bold t))))
-   `(dired-directory                       ((t (:foreground, righteous/comment))))))
+   `(dired-directory                       ((t (:foreground, righteous/comment))))
+   
+   ;; Eglot
+   `(eglot-diagnostic-tag-unnecessary-face ((t (:foreground, righteous/comment))))
+   `(eglot-diagnostic-tag-deprecated-face  ((t (:strike-through t :foreground, righteous/comment))))
 
+))
+    
 (when load-file-name
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
