@@ -1,6 +1,8 @@
 ;; righteous-theme.el -- Colorless righteous theme, inspired by ACME/Solarized/One dark themes
+;; This theme is licensed under the BSD 3-Clause License.
+;; For full license text, see the LICENSE file in the root directory of this project.
 ;; created by Neuromagus ;)
-;; version: 1.04
+;; version: 1.05
 
 (deftheme righteous "Righteous theme")
 
