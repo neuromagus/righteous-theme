@@ -2,7 +2,7 @@
 ;; This theme is licensed under the BSD 3-Clause License.
 ;; For full license text, see the LICENSE file in the root directory of this project.
 ;; created by Neuromagus ;)
-;; version: 1.05
+;; version: 1.10
 
 (deftheme righteous "Righteous theme")
 
@@ -11,9 +11,12 @@
        (righteous/comment                  "#4e4e4e")
        (righteous/modeline                 "#6c6c6c")
        (righteous/string                   "#5faf87")
+       (righteous/error                    "#E50000")
+       (righteous/softblue                 "#7c67d6")
+       (righteous/softwhite                "#f5f5f5")
        (righteous/parentmatch              "#ff5fff")
-       (righteous/cursor                   "#cd390b")
-       (righteous/select                   "#767676"))
+       (righteous/cursor                   "cd390b")
+       (righteous/select                   "#668b8b"))
 
   (custom-theme-set-faces
    `righteous
@@ -23,7 +26,9 @@
               ))
    
    ;; highlight
-   `(region ((t (:foreground "black" :background, righteous/select))))
+   `(region ((t (:foreground, righteous/softwhite :background, righteous/select))))
+   `(isearch ((t (:foreground, righteous/softwhite :background, righteous/select))))
+   `(lazy-highlight ((t (:foreground "black" :background, righteous/select))))
 
    ;;parents match
    `(show-paren-match                      ((t (:foreground, righteous/parentmatch))))
@@ -33,6 +38,12 @@
 
    ;; shell
    `(sh-quoted-exec                        ((t (:foreground, righteous/string))))
+   
+   ;; link, buttons etc
+   `(link                                  ((t (:foreground, righteous/softblue))))
+   `(button                                ((t (:foreground, righteous/softblue))))
+   `(package-name                          ((t (:foreground, righteous/softblue))))
+   `(browse-url-button                     ((t (:foreground, righteous/softblue))))
    
    ;; modeline
    `(linum                                 ((t :foreground, righteous/fg)))
@@ -46,33 +57,49 @@
    `(hl-line                               ((t (:foreground, righteous/select ))))
 
    ;; remove syntax highlight
-   `(font-lock-builtin-face                ((t (:foreground, righteous/fg))))
+   `(font-lock-function-call-face          ((t (:foreground, righteous/fg))))
    `(font-lock-function-name-face          ((t (:foreground, righteous/fg))))
+   `(font-lock-builtin-face                ((t (:foreground, righteous/fg))))
    `(font-lock-keyword-face                ((t (:foreground, righteous/fg))))
    `(font-lock-preprocessor-face           ((t (:foreground, righteous/fg))))
    `(font-lock-type-face                   ((t (:foreground, righteous/fg))))
    `(font-lock-constant-face               ((t (:foreground, righteous/fg))))
    `(font-lock-variable-name-face          ((t (:foreground, righteous/fg))))
+   `(font-lock-variable-use-face           ((t (:foreground, righteous/fg))))   
+   `(font-lock-preprocessor-face           ((t (:foreground, righteous/fg))))
+   `(font-lock-escape-face                 ((t (:foreground, righteous/fg))))
+   `(font-lock-negation-char-face          ((t (:foreground, righteous/fg))))
+   `(font-lock-operator-face               ((t (:foreground, righteous/fg))))
+   `(font-lock-number-face                 ((t (:foreground, righteous/fg))))
+   `(font-lock-property-name-face          ((t (:foreground, righteous/fg))))
+   `(font-lock-property-use-face           ((t (:foreground, righteous/fg))))
+   ;; brackets and delimeters inherits this option
+   `(font-lock-punctuation-face            ((t (:foreground, righteous/fg))))
+   `(font-lock-bracket-face                ((t (:foreground, righteous/fg)))) ;; (e.g., (), [], {})
+   `(font-lock-delimiter-face              ((t (:foreground, righteous/fg)))) ;; (e.g., ;, :, ,)
+   `(font-lock-regexp-face                 ((t (:foreground, righteous/fg))))
+   `(font-lock-regexp-grouping-backslash   ((t (:foreground, righteous/fg))))
+   `(font-lock-regexp-grouping-construct   ((t (:foreground, righteous/fg))))
    
-   ;; add for strings and comments
+   ;; doc strings and comments
    `(font-lock-string-face                 ((t (:foreground, righteous/string))))
    `(font-lock-comment-face                ((t (:foreground, righteous/comment :slant italic))))
    `(font-lock-comment-delimiter-face	   ((t (:foreground, righteous/comment :slant italic))))
    `(font-lock-doc-string-face             ((t (:foreground, righteous/comment))))
+   `(font-lock-doc-markup-face             ((t (:foreground, righteous/comment))))
    `(font-lock-doc-face                    ((t (:foreground, righteous/comment :slant italic))))
-   `(font-lock-preprocessor-face           ((t (:foreground, righteous/comment))))
-   `(font-lock-regexp-grouping-construct   ((t (:foreground, righteous/comment))))
 
    ;; warning/errors
-   `(warning                               ((t (:foreground "red"))))
-   `(error                                 ((t (:foreground "red" :weight bold))))
-   `(font-lock-warning-face                ((t (:foreground "red" :bold t))))
-   `(dired-directory                       ((t (:foreground, righteous/comment))))
+   `(warning                               ((t (:foreground, righteous/error))))
+   `(dired-warning                         ((t (:foreground, righteous/error))))
+   `(show-paren-mismatch                   ((t (:foreground, righteous/error))))
+   `(error                                 ((t (:foreground, righteous/error :weight bold))))
+   `(diff-error                            ((t (:foreground, righteous/error :weight bold))))
+   `(font-lock-warning-face                ((t (:foreground, righteous/error :weight bold))))
    
    ;; Eglot
    `(eglot-diagnostic-tag-unnecessary-face ((t (:foreground, righteous/comment))))
    `(eglot-diagnostic-tag-deprecated-face  ((t (:strike-through t :foreground, righteous/comment))))
-
 ))
     
 (when load-file-name
