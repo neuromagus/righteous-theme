@@ -2,7 +2,7 @@
 ;; This theme is licensed under the BSD 3-Clause License.
 ;; For full license text, see the LICENSE file in the root directory of this project.
 ;; created by Neuromagus ;)
-;; version: 1.10
+;; version: 1.11
 
 (deftheme righteous "Righteous theme")
 
@@ -15,7 +15,7 @@
        (righteous/softblue                 "#7c67d6")
        (righteous/softwhite                "#f5f5f5")
        (righteous/parentmatch              "#ff5fff")
-       (righteous/cursor                   "cd390b")
+       (righteous/cursor                   "#cd390b")
        (righteous/select                   "#668b8b"))
 
   (custom-theme-set-faces
