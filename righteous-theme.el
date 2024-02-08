@@ -14,8 +14,8 @@
        (righteous/error                    "#E50000")
        (righteous/softblue                 "#7c67d6")
        (righteous/softwhite                "#f5f5f5")
-       (righteous/parentmatch              "#ff5fff")
-       (righteous/cursor                   "#cd390b")
+       (righteous/parentmatch              "#fe1eff")
+       (righteous/cursor                   "#ff4500")
        (righteous/select                   "#668b8b"))
 
   (custom-theme-set-faces
@@ -26,12 +26,12 @@
               ))
    
    ;; highlight
-   `(region ((t (:foreground, righteous/softwhite :background, righteous/select))))
-   `(isearch ((t (:foreground, righteous/softwhite :background, righteous/select))))
+   `(region ((t (:foreground "black" :background, righteous/select))))
+   `(isearch ((t (:foreground, righteous/softwhite :background, righteous/select :weight bold))))
    `(lazy-highlight ((t (:foreground "black" :background, righteous/select))))
 
    ;;parents match
-   `(show-paren-match                      ((t (:foreground, righteous/parentmatch))))
+   `(show-paren-match                      ((t (:foreground, righteous/parentmatch :weight bold))))
 
    ;; cursor   
    `(cursor                                ((t (:background, righteous/cursor))))
