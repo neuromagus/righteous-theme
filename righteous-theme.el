@@ -50,17 +50,18 @@
    `(minibuffer-prompt                     ((t :foreground, righteous/string)))
    `(mode-line ((((type tty) (min-colors 256))(:foreground, righteous/fg))
                 (((type tty) (min-colors 8))(:background "black"))
-                (t (:foreground, righteous/modeline))
-    ))
+                (t (:foreground, righteous/modeline))))
    
    ;; hl-line
-   `(hl-line                               ((t (:foreground, righteous/select ))))
+   `(hl-line                               ((t (:foreground, righteous/select))))
+   
+   ;; add bold for testing   
+   `(font-lock-keyword-face                ((t (:foreground, righteous/fg :weight bold))))
 
    ;; remove syntax highlight
    `(font-lock-function-call-face          ((t (:foreground, righteous/fg))))
    `(font-lock-function-name-face          ((t (:foreground, righteous/fg))))
    `(font-lock-builtin-face                ((t (:foreground, righteous/fg))))
-   `(font-lock-keyword-face                ((t (:foreground, righteous/fg))))
    `(font-lock-preprocessor-face           ((t (:foreground, righteous/fg))))
    `(font-lock-type-face                   ((t (:foreground, righteous/fg))))
    `(font-lock-constant-face               ((t (:foreground, righteous/fg))))
