@@ -55,9 +55,6 @@
    ;; hl-line
    `(hl-line                               ((t (:foreground, righteous/select))))
    
-   ;; add bold for testing   
-   `(font-lock-keyword-face                ((t (:foreground, righteous/fg :weight bold))))
-
    ;; remove syntax highlight
    `(font-lock-function-call-face          ((t (:foreground, righteous/fg))))
    `(font-lock-function-name-face          ((t (:foreground, righteous/fg))))
@@ -65,6 +62,7 @@
    `(font-lock-preprocessor-face           ((t (:foreground, righteous/fg))))
    `(font-lock-type-face                   ((t (:foreground, righteous/fg))))
    `(font-lock-constant-face               ((t (:foreground, righteous/fg))))
+   `(font-lock-keyword-face                ((t (:foreground, righteous/fg))))
    `(font-lock-variable-name-face          ((t (:foreground, righteous/fg))))
    `(font-lock-variable-use-face           ((t (:foreground, righteous/fg))))   
    `(font-lock-preprocessor-face           ((t (:foreground, righteous/fg))))
