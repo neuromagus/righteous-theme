@@ -9,7 +9,7 @@ A righteous dark theme for Emacs, inspired by Acme/Solarized themes.
 Copy `righteous-theme.el` to the `~/.config/emacs/themes` and add in `init.el`:
 
 ```elisp
-(add-to-list 'custom-theme-load-path (expand-file-name "~/.config/emacs/themes")
+(add-to-list 'custom-theme-load-path "~/.config/emacs/themes")
 (load-theme 'righteous t)
 ```
 
