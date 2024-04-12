@@ -1,8 +1,8 @@
 ;; righteous-theme.el -- Colorless righteous theme, inspired by ACME/Solarized/One dark themes
 ;; This theme is licensed under the BSD 3-Clause License.
 ;; For full license text, see the LICENSE file in the root directory of this project.
-;; created by Neuromagus ;)
-;; version: 1.11
+;; created by Neuromagus
+;; version: 1.12
 
 (deftheme righteous "Righteous theme")
 
@@ -22,8 +22,7 @@
    `righteous
    `(default ((((type tty) (min-colors 256))(:foreground, righteous/fg))
               (((type tty) (min-colors 8))(:background "black"))
-              (t (:foreground, righteous/fg :background, righteous/bg))
-              ))
+              (t (:foreground, righteous/fg :background, righteous/bg))))
    
    ;; highlight
    `(region ((t (:foreground "black" :background, righteous/select))))
@@ -89,6 +88,7 @@
    `(font-lock-doc-face                    ((t (:foreground, righteous/comment :slant italic))))
 
    ;; warning/errors
+   `(whitespace-line                       ((t (:foreground, righteous/error :underline t))))
    `(warning                               ((t (:foreground, righteous/error))))
    `(dired-warning                         ((t (:foreground, righteous/error))))
    `(show-paren-mismatch                   ((t (:foreground, righteous/error))))
@@ -98,8 +98,8 @@
    
    ;; Eglot
    `(eglot-diagnostic-tag-unnecessary-face ((t (:foreground, righteous/comment))))
-   `(eglot-diagnostic-tag-deprecated-face  ((t (:strike-through t :foreground, righteous/comment))))
-))
+   `(eglot-diagnostic-tag-deprecated-face  ((t (:strike-through t :foreground,
+                                                                righteous/comment))))))
     
 (when load-file-name
   (add-to-list 'custom-theme-load-path
