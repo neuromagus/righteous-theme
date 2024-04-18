@@ -90,6 +90,9 @@
    ;; warning/errors
    `(whitespace-line                       ((t (:foreground, righteous/error :underline t))))
    `(warning                               ((t (:foreground, righteous/error))))
+   `(flycheck-warning                      ((t (:foreground, righteous/error))))
+   `(flycheck-error                        ((t (:foreground, righteous/error))))
+   `(compilation-error                     ((t (:foreground, righteous/error))))
    `(dired-warning                         ((t (:foreground, righteous/error))))
    `(show-paren-mismatch                   ((t (:foreground, righteous/error))))
    `(error                                 ((t (:foreground, righteous/error :weight bold))))
