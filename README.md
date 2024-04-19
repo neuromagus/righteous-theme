@@ -13,3 +13,4 @@ Copy `righteous-theme.el` to the `~/.config/emacs/themes` and add in `init.el`:
 (load-theme 'righteous t)
 ```
 
+Enjoy ;)
