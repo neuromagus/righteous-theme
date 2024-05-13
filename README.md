@@ -1,6 +1,4 @@
 <h2 align="center">Righteous theme</h2>
-<hr/>
-
 <p align="center">
   <img src="./logo/righteous_theme_logo_128.png" />
 </p>
