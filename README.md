@@ -1,11 +1,7 @@
 ## Righteous theme
-A "Righteous" dark theme for VSCode, Emacs and other editors, inspired by the Acme/Solarized themes and [this post](https://twitter.com/nixcraft/status/505189951844417538).
+A "Righteous" dark theme for VSCode, Emacs and other editors, inspired by the Acme/Solarized themes.
 
-https://twitter.com/nixcraft/status/505189951844417538 (NixCraft)
-![meme](https://github.com/neuromagus/righteous-theme/blob/main/examples/meme.jpg)
-
-
-VSCode Screenshot
+### VSCode Screenshot
 ![vscode-screenshot](https://github.com/neuromagus/righteous-theme/blob/main/examples/screenshot-vscode.jpg)
 
 ### Installing
