@@ -1,0 +1,29 @@
+{
+    "name": "righteous-theme",
+    "displayName": "Righteous theme",
+    "description": "Righteous theme for true",
+    "publisher": "Neuromagus",
+    "version": "1.12",
+    "icon": "logo.png",
+    "pricing": "Free",
+    "license": "SEE LICENSE IN LICENSE file (BSD-3-Clause license)",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/neuromagus/righteous-theme/vscode"
+    },
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "righteous",
+                "uiTheme": "vs-dark",
+                "path": "./themes/righteous-theme.json"
+            }
+        ]
+    }
+}
