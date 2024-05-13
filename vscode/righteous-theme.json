@@ -1,0 +1,39 @@
+{
+    "name": "Righteous",
+    "type": "dark",
+    "colors": {
+	    "editor.background": "#00181f",
+	    "editor.foreground": "#93a1a1",
+        "panel.border": "#00181f",
+        "editorBracketMatch.border": "#e900da",
+        "sideBar.ba ckground": "#00181f",
+        "tab.activeBackground": "#00181f",
+        "tab.activeForeground": "#7c67d6",
+        "tab.inactiveForeground":"#93a1a1",
+        "sideBarTitle.foreground": "#93a1a1",
+        "statusBar.background": "#00181f",
+        "activityBarBadge.background": "#668b8b",
+        "editorCursor.foreground": "#ff4500",
+        "editorCursor.background": "#000000",
+        "statusBar.foreground": "#6c6c6c",
+        "errorForeground": "#E50000"
+    },
+    "tokenColors": [{
+	"name": "Comment",
+	"scope": [
+	    "comment",
+	    "punctuation.definition.comment"
+        ],
+    	"settings": {
+	        "fontStyle": "italic",
+	        "foreground": "#4e4e4e"
+	    }
+    },
+    {         
+    	"name": "Any strings",
+	    "scope": "string",
+	    "settings": {
+	        "foreground": "#5faf87"
+	    }
+    }]
+}
