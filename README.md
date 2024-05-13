@@ -8,7 +8,7 @@ A "Righteous" dark theme for VSCode, Emacs and other editors, inspired by the Ac
 Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter.
 
 ```bash
-ext install dawranliou.minimal-theme-vscode
+ext install neuromagus.righteous-theme.vsix
 ```
 
 Other editors in named folders
