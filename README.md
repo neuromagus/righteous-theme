@@ -1,4 +1,6 @@
-## Righteous theme
+<h2 align="center">Righteous theme</h3>
+<hr/>
+
 A "Righteous" dark theme for VSCode, Emacs and other editors, inspired by the Acme/Solarized themes.
 
 ### VSCode Screenshot
