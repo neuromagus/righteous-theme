@@ -1,3 +1,5 @@
+# Moved to Codeberg https://codeberg.org/neuromagus/righteous-theme
+
 <h2 align="center">Righteous theme</h2>
 <p align="center">
   <img src="./logo/righteous_theme_logo_128.png" />
